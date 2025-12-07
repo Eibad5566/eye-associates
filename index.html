@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EYE Associate – Clearing & Freight Forwarder</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  
+</head>
+
+<body>
+  <!-- Soft animated background -->
+  <div class="floating-shapes"></div>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo-area">
+        <img src="assets/logo.png" alt="EYE Associate Logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-main">EYE ASSOCIATE</span>
+          <span class="logo-sub">Clearing &amp; Freight Forwarder</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#warehouses">Warehouses</a></li>
+          <li><a href="#tracking">Tracking</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="admin-login.html" class="admin-link">Admin Login</a></li>
+          
+        </ul>
+
+        <button
+          class="btn btn-sm primary-cta-nav"
+          type="button"
+          onclick="scrollToSection('contact')"
+        >
+          Get a Quote
+        </button>
+
+        <button class="nav-toggle" id="navToggle" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero hero-logistics">
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-container">
+      <!-- LEFT: TEXT -->
+      <div class="hero-text fade-in">
+        <h1>
+          Your
+          <span class="highlight">Global Clearing &amp; Freight Forwarding</span>
+          Partner
+        </h1>
+
+        <p>
+          Since 2005, EYE Associate has been providing complete Import &amp; Export
+          services: customs clearance, freight forwarding, documentation, and
+          secure warehousing in <strong>Turkey, China &amp; USA</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn" type="button" onclick="scrollToSection('contact')">
+            Get a Quote
+          </button>
+          <button class="btn btn-outline" type="button" onclick="openWhatsApp()">
+            WhatsApp Us
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-number" data-target="19" data-suffix="+">0</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Global Warehouses</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="50" data-suffix="+">0</span>
+            <span class="stat-label">Countries Served</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: IMAGE COLLAGE -->
+      <div class="hero-visual fade-in">
+        <div class="image-grid">
+          <div class="image-block image-block-lg">
+            <img src="assets/cargo-plane.png" alt="Air Freight" />
+            <div class="image-overlay">Air Freight</div>
+          </div>
+
+          <div class="image-block image-block-sm">
+            <img src="assets/container-ship-day.png" alt="Sea Freight" />
+            <div class="image-overlay">Sea Freight</div>
+          </div>
+
+          <div class="image-block image-block-sm">
+            <img src="assets/warehouse.jpg" alt="Warehousing" />
+            <div class="image-overlay">Warehousing</div>
+          </div>
+
+          <div class="image-block image-block-wide">
+            <img src="assets/truck-road.png" alt="Road Transport" />
+            <div class="image-overlay">Road Transport</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <div class="section-header">
+        <h2>About EYE Associate</h2>
+        <p>Connecting trade globally with trust and reliability.</p>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            Established in 2005, EYE Associate specializes in global Import &amp;
+            Export operations. From shipping containers to air cargo, we handle
+            documentation, customs clearing, freight forwarding, and secure
+            warehousing.
+          </p>
+          <p>
+            With offices and warehouses in
+            <strong>Turkey, China, and the USA</strong>, we simplify global trade
+            and ensure smooth cargo movement for our clients.
+          </p>
+        </div>
+
+        <div class="about-cards">
+          <div class="about-card">
+            <h3>Our Mission</h3>
+            <p>To make global trade easy, transparent, and efficient for everyone.</p>
+          </div>
+
+          <div class="about-card">
+            <h3>Our Vision</h3>
+            <p>
+              To be one of the most trusted clearing &amp; forwarding companies
+              worldwide by building long-term partnerships.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section section-alt fade-in">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>Reliable end-to-end global logistics solutions.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Import Services</h3>
+          <p>Supplier coordination, port handling, customs, and final delivery.</p>
+          <ul>
+            <li>Sourcing &amp; inspections</li>
+            <li>Sea / Air freight</li>
+            <li>Customs clearance</li>
+            <li>Last-mile delivery</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>Export Services</h3>
+          <p>Packing, documentation, freight forwarding, and global shipment.</p>
+          <ul>
+            <li>Export paperwork</li>
+            <li>Container loading</li>
+            <li>Worldwide shipping</li>
+            <li>Destination clearing</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>Customs Clearance</h3>
+          <p>Fast and expert customs processing for all cargo types.</p>
+          <ul>
+            <li>B/L, invoices, certificates</li>
+            <li>Duties &amp; taxes</li>
+            <li>Inspection handling</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>Warehousing</h3>
+          <p>Secure storage in Turkey, China, and USA.</p>
+          <ul>
+            <li>Short / long-term storage</li>
+            <li>Consolidation</li>
+            <li>Repacking &amp; labeling</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>Freight Forwarding</h3>
+          <p>Sea, air, and land logistics tailored to your cargo.</p>
+          <ul>
+            <li>FCL / LCL shipping</li>
+            <li>Air freight</li>
+            <li>Truck freight</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>Consultation</h3>
+          <p>Expert guidance for new importers &amp; exporters.</p>
+          <ul>
+            <li>Cost estimation</li>
+            <li>Market advice</li>
+            <li>Regulation support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WAREHOUSES ===== -->
+  <section id="warehouses" class="section fade-in">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Warehouses</h2>
+        <p>Strategically located global storage hubs.</p>
+      </div>
+
+      <div class="warehouses-grid">
+        <div class="warehouse-card">
+          <h3>Turkey Warehouse</h3>
+          <p class="warehouse-location">Istanbul, Turkey</p>
+          <p>Ideal for Europe–Asia transit cargo.</p>
+          <ul>
+            <li>Electronics</li>
+            <li>Textiles</li>
+            <li>Consumer goods</li>
+          </ul>
+        </div>
+
+        <div class="warehouse-card">
+          <h3>China Warehouse</h3>
+          <p class="warehouse-location">Guangzhou / Yiwu</p>
+          <p>Sourcing, loading, and export operations.</p>
+          <ul>
+            <li>Factory pickup</li>
+            <li>Quality check</li>
+            <li>Consolidation</li>
+          </ul>
+        </div>
+
+        <div class="warehouse-card">
+          <h3>USA Warehouse</h3>
+          <p class="warehouse-location">New Jersey, USA</p>
+          <p>Distribution &amp; FBA-style processing.</p>
+          <ul>
+            <li>Dispatch</li>
+            <li>Labeling</li>
+            <li>Inventory holding</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRACKING ===== -->
+  <section id="tracking" class="section section-alt fade-in">
+    <div class="container">
+      <div class="section-header">
+        <h2>Shipment Tracking</h2>
+        <p>Enter your tracking number below.</p>
+      </div>
+
+      <div class="tracking-box">
+        <form id="trackingForm" class="tracking-form">
+          <input
+            type="text"
+            id="trackingId"
+            placeholder="Enter Tracking ID (e.g., EYE-12345)"
+            required
+          />
+          <button class="btn" type="submit">Track</button>
+        </form>
+
+        <div id="trackingResult" class="tracking-result"></div>
+
+        <p class="tracking-note">
+          * Live tracking powered by EYE Associate backend.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section fade-in">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>Get a quote or ask anything.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Office Information</h3>
+          <p><strong>Email:</strong> eyeassociate2815@gmail.com</p>
+          <p><strong>WhatsApp:</strong> +92 311 2032370</p>
+          <p><strong>PTCL #:</strong> 0092-21-32633494</p>
+          <p>
+            <strong>Address:</strong><br />
+            ROOM # 218 &amp; 219, 2nd FLOOR,<br />
+            PAK BAIT-UL-QAYYAM BUILDING,<br />
+            HAQQANI CHOWCK, OFF: I.I. CHUNDRIGAR ROAD,<br />
+            KARACHI – PAKISTAN.
+          </p>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nameInput">Name*</label>
+              <input type="text" id="nameInput" required />
+            </div>
+
+            <div class="form-group">
+              <label for="emailInput">Email*</label>
+              <input type="email" id="emailInput" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phoneInput">WhatsApp*</label>
+              <input type="tel" id="phoneInput" required />
+            </div>
+
+            <div class="form-group">
+              <label for="serviceInput">Service*</label>
+              <select id="serviceInput" required>
+                <option value="">Choose One</option>
+                <option value="import">Import</option>
+                <option value="export">Export</option>
+                <option value="warehouse">Warehousing</option>
+                <option value="freight">Freight Forwarding</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="messageInput">Message*</label>
+            <textarea id="messageInput" rows="4" required></textarea>
+          </div>
+
+          <button class="btn" type="submit">Submit</button>
+          <p id="contactStatus" class="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© <span id="year"></span> EYE Associate. All Rights Reserved.</p>
+    </div>
+  </footer>
+   <script type="module" src="supabaseClient.js"></script>
+
+   <script type="module" src="script.js"></script>
+  
+</body>
+</html>

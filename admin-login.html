@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Login – EYE Associate</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="login-body">
+  <div class="login-box">
+    <img src="assets/logo.png" alt="Logo" class="login-logo" />
+    <h2>Admin Login</h2>
+    <p class="login-sub">Authorized personnel only</p>
+
+    <form id="adminLoginForm">
+      <div class="login-group">
+        <label for="adminEmail">Email</label>
+        <input type="email" id="adminEmail" required />
+      </div>
+
+      <div class="login-group">
+        <label for="adminPassword">Password</label>
+        <input type="password" id="adminPassword" required />
+      </div>
+
+      <button class="btn" type="submit">Login</button>
+      <p id="loginStatus" class="login-status"></p>
+    </form>
+
+    <p class="login-sub" style="margin-top: 1rem;">
+      Admin users are created in Supabase Authentication.
+    </p>
+  </div>
+
+ <script type="module" src="admin-login.js"></script>
+
+</body>
+</html>

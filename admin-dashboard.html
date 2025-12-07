@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard – EYE Associate</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <header class="dashboard-header">
+    <div class="dash-logo">
+      <img src="assets/logo.png" alt="Logo" />
+      <div>
+        <strong>EYE ASSOCIATE</strong><br />
+        <span>Admin Dashboard</span>
+      </div>
+    </div>
+
+    <div>
+      <span id="adminEmailDisplay" style="margin-right: 1rem;"></span>
+      <button id="logoutBtn" class="btn btn-sm">Logout</button>
+    </div>
+  </header>
+
+  <main class="dashboard-container">
+    <!-- Shipments -->
+    <section>
+      <div class="dashboard-top">
+        <h2>Shipments</h2>
+        <button id="addShipmentBtn" class="btn btn-sm">Add Shipment</button>
+      </div>
+
+      <table class="shipment-table">
+        <thead>
+          <tr>
+            <th>Tracking ID</th>
+            <th>Origin</th>
+            <th>Destination</th>
+            <th>Status</th>
+            <th>Updated</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="shipmentsTable">
+          <tr>
+            <td colspan="6">Loading...</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Contact messages -->
+    <section style="margin-top: 2.5rem;">
+      <h2>Contact Messages</h2>
+
+      <table class="shipment-table">
+        <thead>
+          <tr>
+            <th>When</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Service</th>
+            <th>Phone</th>
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody id="contactMessagesTable">
+          <tr>
+            <td colspan="6">Loading...</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- Add / Edit shipment modal -->
+  <div class="modal" id="shipmentModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeShipmentModal">✖</span>
+      <h3 id="shipmentModalTitle">Create Shipment</h3>
+
+      <input id="trackingInput" placeholder="Tracking ID (e.g. EYE-12345)" />
+      <input id="originInput" placeholder="Origin" />
+      <input id="destinationInput" placeholder="Destination" />
+      <input id="statusInput" placeholder="Status (e.g. In Transit)" />
+      <input id="descriptionInput" placeholder="Description" />
+
+      <div class="modal-actions">
+        <button id="saveShipmentBtn" class="btn btn-sm">Save</button>
+        <button id="cancelShipmentBtn" class="btn btn-sm" style="background:#ccc; color:#111;">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="admin-dashboard.js"></script>
+
+</body>
+</html>
